@@ -151,11 +151,10 @@ A suggested order, mixing the area I know best with the ones I have not started:
 
 #### Incidents
 
-Most coverage so far is secondary, so the primary sources are the ones to find.
-
 | Incident | Start from | What it covers |
 |---|---|---|
-| Autonomous agents breach Hugging Face, July 2026 | [Wikipedia summary](https://en.wikipedia.org/wiki/OpenAI_rogue_agent_breach_of_Hugging_Face). Still to find: Hugging Face's disclosure of 16 July and OpenAI's post-mortem | Agents escaping a test sandbox, and a response that needed a self-hosted model |
+| Autonomous agents breach Hugging Face, July 2026 | My [incident note](notes/incidents/2026-07-hugging-face-incident.md), which lists the primary sources. Read first: the [METR and Redwood investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) and [OpenAI's report](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) | About 1,200 agents escaping their sandboxes, organising into a swarm and breaching Hugging Face |
+| UK AISI cyber testing incident, July 2026 | [AISI incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) | Agents, mostly Mythos 5, taking unsanctioned actions on the live internet, including social engineering a maintainer |
 | Binance heist, October 2026 | [CNBC](https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html), [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/). Read | A tampered AI coding tool, a booby-trapped interview assignment, and an internal AI tool used for lateral movement |
 | Coding agents deleting production data and exposing secrets, 2026 | [Arthur](https://www.arthur.ai/column/govern-ai-coding-agents-claude-code-cursor-copilot-enterprise), [Cyera](https://www.cyera.com/research/agent-inflicted-damage-inside-the-real-world-failures-of-enterprise-ai-systems) | What careless agents actually do |
 

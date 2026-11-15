@@ -9,7 +9,9 @@
 | Areas | Agent security, reward hacking, monitoring, AI control |
 | Status | Summary drafted by Claude from the transcript on 2026-11-15 |
 
-The video that made me aware of the channel.
+The video that made me aware of the channel. It was made before the full reports came out. For the
+full picture, and where the reports differ from this account, see my
+[incident note](../incidents/2026-07-hugging-face-incident.md).
 
 ## Summary of topics
 

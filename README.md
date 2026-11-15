@@ -10,6 +10,7 @@ A repo for me to keep track of topics of interest in the AI Safety space.
 |---|---|
 | [reading-list.md](reading-list.md) | What I have read, watched and listened to, and what is next, grouped by area |
 | [notes/papers/](notes/papers/) | One file per paper I have read: a summary, then my own write-up |
+| [notes/incidents/](notes/incidents/) | Write-ups of real AI incidents, with the sources to read |
 | [notes/videos/](notes/videos/) | A summary of the topics covered in each video I have watched |
 | [notes/podcasts/](notes/podcasts/) | A summary of the topics covered in each podcast episode I have listened to |
 | [notes/TEMPLATE.md](notes/TEMPLATE.md) | The template for a new paper note |
