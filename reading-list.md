@@ -1,7 +1,8 @@
 # Reading list
 
-What I have read and what is next, grouped by the [areas](README.md#areas-of-interest) I am
-interested in. Papers I have read have a note in [notes/papers/](notes/papers/).
+What I have read, watched and listened to, and what is next, grouped by the
+[areas](README.md#areas-of-interest) I am interested in. Papers I have read have a note in
+[notes/papers/](notes/papers/).
 
 For papers I have not read, the "What it covers" column says what the paper is about, not what I
 took from it. Entries marked *(added 2026-11-15)* were suggested with Claude's help; check each one
@@ -28,9 +29,47 @@ A suggested order, mixing the area I know best with the ones I have not started:
 
 | Paper | Read | Areas | Note |
 |---|---|---|---|
-| Greenblatt, Shlegeris, Sachan and Roger, [AI Control: Improving Safety Despite Intentional Subversion](https://arxiv.org/abs/2312.06942), December 2023 | November 2026 | Control | [note](notes/papers/2023-greenblatt-ai-control.md) |
+| Greenblatt, Shlegeris, Sachan and Roger, [AI Control: Improving Safety Despite Intentional Subversion](https://arxiv.org/abs/2312.06942), December 2023 | October 2026 | Control | [note](notes/papers/2023-greenblatt-ai-control.md) |
 | Bhatt, Rushing, Kaufman et al., [Ctrl-Z: Controlling AI Agents via Resampling](https://arxiv.org/abs/2504.10374), April 2025 | November 2026 | Control, monitoring | [note](notes/papers/2025-bhatt-ctrl-z.md) |
 | Meinke, Schoen, Scheurer, Balesni, Shah and Hobbhahn (Apollo Research), [Frontier Models are Capable of In-context Scheming](https://arxiv.org/abs/2412.04984), December 2024 | November 2026 | Scheming, evaluations | [note](notes/papers/2024-meinke-in-context-scheming.md) |
+
+---
+
+## Watched and listened
+
+### Videos
+
+| Video | Channel | Notes |
+|---|---|---|
+| [Using Dangerous AI, But Safely?](https://www.youtube.com/watch?v=0pgEMWy70Qk) | Robert Miles AI Safety | A walk-through of the Greenblatt et al. AI Control paper. See the [note](notes/papers/2023-greenblatt-ai-control.md). |
+| [9 Examples of Specification Gaming](https://www.youtube.com/watch?v=nKJlF-olKmg) | Robert Miles AI Safety | Reward hacking and specification gaming, with examples. |
+| [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44), 2015 | SethBling | Watched a long time ago. A very interesting example of how AI can take unusual and unexpected routes to reach a goal. |
+| [The Waluigi Effect: Microsoft's Disastrous AI Experiment](https://www.youtube.com/watch?v=LKiHk6OHfTA) | Reuben Adams | The Waluigi effect. |
+| [Roman Yampolskiy - AI: Unexplainable, Unpredictable, Uncontrollable](https://www.youtube.com/watch?v=-cDavlXeFAc), March 2026 | Science, Technology & the Future | A Future Day 2026 talk and Q&A arguing that advanced AI cannot be fully explained, predicted or controlled. The books and papers he mentions are under [Roman Yampolskiy](#roman-yampolskiy) below. |
+| [Transformers, the tech behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M) (Deep Learning chapter 5) | 3Blue1Brown | How transformers and LLMs work. |
+| [Hugging Face: Why AI Might Kill Us](https://www.youtube.com/watch?v=yudBtXgr5UE), August 2026 | Hoog | The video that made me aware of the channel. |
+| [What did Amodei see?](https://www.youtube.com/watch?v=e2gqBW0j-VU), September 2026 | Hoog | |
+| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=lZh0o_X6l7I), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which is on the list below. |
+| [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=4KCpGLaA4DY), November 2026 | Hoog | |
+
+### Podcasts
+
+| Episode | Notes |
+|---|---|
+| 80,000 Hours, [An AI disaster hits. The president calls Xi. Then what?](https://www.nonzero.org/p/unlocked-debating-the-ai-china-question), Jeremie Harris, crosspost from NonZero, November 2026 | Wargaming a US–China response to an AI disaster. |
+| 80,000 Hours, [Your AI crash course starts here](https://80000hours.org/podcast/on-artificial-intelligence/), November 2026 | Their pick of the 10 best episodes for getting up to speed on transformative AI. A good source for what to listen to next. |
+| 80,000 Hours, [The US is building the smartest AI. China is running a different race](https://80000hours.org/podcast/episodes/china-ai-race-chips-slowdown/), Luisa Rodriguez, November 2026 | How China's best models stay about six months behind America's with far less computing power. |
+| 80,000 Hours, [Is Anthropic on the cusp of RSI? Inside the redacted METR report](https://80000hours.org/podcast/episodes/metr-anthropic-recursive-self-improvement-RSI/), Luisa Rodriguez, November 2026 | METR's independent assessment of AI speeding up AI research at Anthropic, after 11 weeks inside the lab. |
+| 80,000 Hours, [How the New Congress Can Save Us From AI Disaster](https://80000hours.org/podcast/episodes/congress-ai-policy-after-midterms/), Rob Wiblin, November 2026 | AI policy after the US midterms. |
+
+### Channels and podcasts I follow
+
+| Channel | Notes |
+|---|---|
+| [Robert Miles AI Safety](https://www.youtube.com/@RobertMilesAI) | Clear explainers on AI safety papers and ideas. |
+| [Hoog](https://www.youtube.com/@hoog-youtube) | I have watched all the AI videos since the Hugging Face one. |
+| [80,000 Hours Podcast](https://80000hours.org/podcast/) | Most of their recent episodes are on AI. |
+| [3Blue1Brown](https://www.youtube.com/@3blue1brown) | The recent videos on transformers and LLMs are very good, and I watched some of the earlier ones on neural networks a long time ago. |
 
 ---
 
@@ -44,6 +83,8 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Wen et al., [Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats](https://arxiv.org/abs/2411.17693), November 2024 *(added 2026-11-15)* | Control when no single action is catastrophic and harm builds up over many tasks, with the protocol adjusting as evidence about the model accumulates. |
 | Korbak, Clymer, Hilton, Shlegeris and Irving, [A sketch of an AI control safety case](https://arxiv.org/abs/2501.17315), January 2025 *(added 2026-11-15)* | How the results of a control evaluation would be turned into an argument that a deployment is safe. |
 | Korbak et al., [How to evaluate control measures for LLM agents?](https://arxiv.org/abs/2504.05259), April 2025 *(added 2026-11-15)* | How control evaluations would need to change as models get more capable. |
+| Kutasov et al., [Evaluating Control Protocols for Untrusted AI Agents](https://arxiv.org/abs/2511.02997), November 2025 | Builds on Greenblatt et al. and Ctrl-Z. Tests deferring to a trusted model, resampling and deferring on critical actions in SHADE-Arena, then lets the red team adapt. Resampling falls apart against attackers that know when it happens; deferring on critical actions holds up. |
+| Kaufman et al., [BashArena: A Control Setting for Highly Privileged AI Agents](https://arxiv.org/abs/2512.15688), December 2025 | The successor to Ctrl-Z's BashBench: 637 Linux administration tasks and four sabotage goals (run malware, exfiltrate secrets, escalate privileges, disable the firewall), released as a ControlArena setting. |
 | [Distributed Attacks in Persistent-State AI Control](https://arxiv.org/html/2607.02514v1), July 2026 | A coding agent pursues a hidden side task across a series of pull requests: the multi-step attack problem at the scale of a codebase. Abstract only so far. |
 | [Honeypot Protocol](https://arxiv.org/pdf/2604.13301), April 2026 | Only the title seen so far. Probably about baiting an agent into revealing itself. |
 
@@ -70,7 +111,8 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Kutasov et al., [SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents](https://arxiv.org/abs/2506.15740), June 2025 *(added 2026-11-15)* | Agentic environments with a main task and a hidden harmful side task, scoring both the agent's sabotage and a monitor's ability to catch it. |
 | Storf et al., [Constitutional Black-Box Monitoring for Scheming in LLM Agents](https://arxiv.org/abs/2603.00829v1), March 2026, revised May 2026 | Monitors that see only the agent's actions, trained on synthetic data and tested on ControlArena runs. Abstract only so far. |
 | Sinha et al., [Training Deliberative Monitors for Black-Box Scheming Detection](https://arxiv.org/html/2605.29601), May 2026 | Small open-weight models fine-tuned as monitors, the route for a monitor that has to be self-hosted. Abstract only so far. |
-| [SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors](https://arxiv.org/pdf/2605.16626), May 2026 | A catalogue of ways to get past monitors. Abstract only so far. |
+| Najt et al., [SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors](https://arxiv.org/abs/2605.16626), May 2026 | A catalogue of ways to get past monitors. Abstract only so far. |
+| Mukhopadhyay, [DeceptGuard: A Constitutional Oversight Framework for Detecting Deception in LLM Agents](https://arxiv.org/abs/2603.13791), March 2026 | Compares three kinds of monitor on the same agent runs: actions only, actions plus chain of thought, and actions plus activation probes. |
 | Apollo Research, [A scalable monitoring research agenda](https://www.apolloresearch.ai/products/a-scalable-monitoring-research-agenda/) | Where Apollo thinks monitoring coding agents is heading. |
 | Apollo Research, [Introducing Watcher](https://www.apolloresearch.ai/monitoring/introducing-watcher-for-ai-oversight), February 2026 | What the product does and how it is deployed. |
 
@@ -125,6 +167,32 @@ Most coverage so far is secondary, so the primary sources are the ones to find.
 | Amodei et al., [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565), June 2016 *(added 2026-11-15)* | The older paper that set out safety as engineering problems: side effects, reward hacking, scalable oversight, safe exploration, distribution shift. |
 | Hendrycks, Mazeika and Woodside, [An Overview of Catastrophic AI Risks](https://arxiv.org/abs/2306.12001), June 2023 *(added 2026-11-15)* | A survey of risks beyond misalignment: misuse, competitive pressure and organisational accidents. |
 | Bengio et al., [International AI Safety Report](https://arxiv.org/abs/2501.17805), January 2025 *(added 2026-11-15)* | The government-commissioned summary of the evidence on general-purpose AI risks. |
+
+#### Roman Yampolskiy
+
+His books and papers, starting with the ones he mentions in the
+[Future Day 2026 talk](https://www.youtube.com/watch?v=-cDavlXeFAc).
+
+| Item | What it covers |
+|---|---|
+| Yampolskiy, [AI: Unexplainable, Unpredictable, Uncontrollable](https://www.routledge.com/AI-Unexplainable-Unpredictable-Uncontrollable/Yampolskiy/p/book/9781032576268), 2024 (book) | The book the talk is named after: the limits on explaining, predicting and controlling advanced AI. |
+| Yampolskiy, [On Controllability of AI](https://arxiv.org/abs/2008.04071), 2020 | The control paper from the talk. Goes through kinds of control (explicit, implicit, aligned, delegated) and argues none of them works for superintelligence. |
+| Brcic and Yampolskiy, [Impossibility Results in AI: A Survey](https://arxiv.org/abs/2109.00484), 2021, ACM Computing Surveys | About 50 impossibility results and what they mean for AI safety. He suggests picking one and applying it to safety as a follow-up project. |
+| Sotala and Yampolskiy, [Responses to catastrophic AGI risk: a survey](https://doi.org/10.1088/0031-8949/90/1/018001), Physica Scripta, 2015 | The open-access survey of proposed ways to control advanced AI that he shows in the talk, with about 300 references. |
+| Yampolskiy, [Unexplainability and Incomprehensibility of Artificial Intelligence](https://arxiv.org/abs/1907.03869), 2019 | The "unexplainable" part of the book. |
+| Yampolskiy, [Unpredictability of AI](https://arxiv.org/abs/1905.13053), 2019 | The "unpredictable" part of the book. |
+| Yampolskiy (editor), Artificial Intelligence Safety and Security, 2018 (book) | The edited collection he mentions, with proposed solutions from scholars in many fields. |
+
+#### Also mentioned in the Yampolskiy talk
+
+| Item | What it covers |
+|---|---|
+| Bostrom, Superintelligence: Paths, Dangers, Strategies, 2014 (book) | The book that set out control versus motivation selection, instrumental convergence and much of the vocabulary. |
+| Omohundro, [The Basic AI Drives](https://selfawaresystems.com/wp-content/uploads/2008/01/ai_drives_final.pdf), 2008 | Why almost any goal-seeking system would want to protect its goals, gain resources and avoid being switched off. |
+| Yudkowsky and Soares, If Anyone Builds It, Everyone Dies, 2025 (book) | The case that building superintelligence with current methods would end badly. Also the subject of a Hoog video. |
+| Kokotajlo, Alexander et al., [AI 2027](https://ai-2027.com/), 2025 | A detailed scenario of how the next few years of AI could go. |
+| de Garis, The Artilect War, 2005 (book) | Yampolskiy says he always recommends it. On a coming conflict over whether to build superhuman AI. |
+| Bostrom, [AI Creation and the Cosmic Host](https://nickbostrom.com/papers/ai-creation-and-the-cosmic-host.pdf), 2024 | Whether a superintelligence should defer to the norms of other powerful minds that may already exist. |
 
 ### Governance and safety frameworks
 

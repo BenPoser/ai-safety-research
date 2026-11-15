@@ -8,7 +8,7 @@ A repo for me to keep track of topics of interest in the AI Safety space.
 
 | Path | What |
 |---|---|
-| [reading-list.md](reading-list.md) | What I have read and what is next, grouped by area |
+| [reading-list.md](reading-list.md) | What I have read, watched and listened to, and what is next, grouped by area |
 | [notes/papers/](notes/papers/) | One file per paper I have read: a summary, then my own write-up |
 | [notes/TEMPLATE.md](notes/TEMPLATE.md) | The template for a new paper note |
 | [log.md](log.md) | A dated log of what I did and learned |
