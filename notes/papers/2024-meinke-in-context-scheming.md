@@ -83,9 +83,8 @@ if propensity is the real question?
 
 ### How does it connect to what I have read or built?
 
-Prompts, if useful: oversight subversion is an agent editing its own monitor's configuration,
-which is the hook-config rule on the monitor's roadmap. What does sandbagging mean for the monitor's
-own evaluation in step 2?
+Prompts, if useful: what does oversight subversion mean for any monitor an agent can reach? What
+does sandbagging mean for control evaluations, which assume the red team tries its hardest?
 
 ## Questions
 

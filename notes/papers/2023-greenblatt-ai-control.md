@@ -83,8 +83,8 @@ the right threat model for most deployments? What does it mean that GPT-4 stood 
 
 ### How does it connect to what I have read or built?
 
-Prompts, if useful: where does the monitor's hook sit among these protocols? What would "defer to
-trusted" mean for a Claude Code session?
+Prompts, if useful: which of these protocols would a company deploying coding agents use today?
+What would "defer to trusted" mean for an agent working in a real codebase?
 
 ## Questions
 

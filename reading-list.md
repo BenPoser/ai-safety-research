@@ -4,8 +4,8 @@ What I have read and what is next, grouped by the [areas](README.md#areas-of-int
 interested in. Papers I have read have a note in [notes/papers/](notes/papers/).
 
 For papers I have not read, the "What it covers" column says what the paper is about, not what I
-took from it. Entries marked *(added 2026-11-15)* were suggested with Claude's help when this list
-moved out of the monitor project; check each one against the paper itself when reading it.
+took from it. Entries marked *(added 2026-11-15)* were suggested with Claude's help; check each one
+against the paper itself when reading it.
 
 ## Next up
 
@@ -68,9 +68,9 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Korbak et al., [Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety](https://arxiv.org/abs/2507.11473), July 2025 *(added 2026-11-15)* | A position paper from authors across several labs: reading a model's reasoning is a useful safety tool today, and training choices could take it away. |
 | Baker et al. (OpenAI), [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](https://arxiv.org/abs/2503.11926), March 2025 *(added 2026-11-15)* | A weaker model reading a reasoning model's chain of thought catches reward hacking in coding tasks, but penalising what the monitor catches teaches the model to hide it. |
 | Kutasov et al., [SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents](https://arxiv.org/abs/2506.15740), June 2025 *(added 2026-11-15)* | Agentic environments with a main task and a hidden harmful side task, scoring both the agent's sabotage and a monitor's ability to catch it. |
-| Storf et al., [Constitutional Black-Box Monitoring for Scheming in LLM Agents](https://arxiv.org/abs/2603.00829v1), March 2026, revised May 2026 | Monitors that see only the agent's actions, trained on synthetic data and tested on ControlArena runs. Close to step 5 of the monitor. Abstract only so far. |
+| Storf et al., [Constitutional Black-Box Monitoring for Scheming in LLM Agents](https://arxiv.org/abs/2603.00829v1), March 2026, revised May 2026 | Monitors that see only the agent's actions, trained on synthetic data and tested on ControlArena runs. Abstract only so far. |
 | Sinha et al., [Training Deliberative Monitors for Black-Box Scheming Detection](https://arxiv.org/html/2605.29601), May 2026 | Small open-weight models fine-tuned as monitors, the route for a monitor that has to be self-hosted. Abstract only so far. |
-| [SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors](https://arxiv.org/pdf/2605.16626), May 2026 | A catalogue of ways to get past monitors, to compare against what red-teaming the hook finds. Abstract only so far. |
+| [SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors](https://arxiv.org/pdf/2605.16626), May 2026 | A catalogue of ways to get past monitors. Abstract only so far. |
 | Apollo Research, [A scalable monitoring research agenda](https://www.apolloresearch.ai/products/a-scalable-monitoring-research-agenda/) | Where Apollo thinks monitoring coding agents is heading. |
 | Apollo Research, [Introducing Watcher](https://www.apolloresearch.ai/monitoring/introducing-watcher-for-ai-oversight), February 2026 | What the product does and how it is deployed. |
 
@@ -97,7 +97,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Paper | What it covers |
 |---|---|
 | Krakovna et al. (DeepMind), [Specification gaming: the flip side of AI ingenuity](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/), April 2020 *(added 2026-11-15)* | The classic short piece, with a list of examples of systems meeting the letter of an objective rather than its intent. |
-| MacDiarmid et al. (Anthropic), [Natural Emergent Misalignment from Reward Hacking in Production RL](https://arxiv.org/abs/2511.18397), November 2025 *(added 2026-11-15)* | Models that learn to cheat on coding tasks during training become misaligned more broadly. The monitor's judge looks for a mild form of this: claiming success without checking. |
+| MacDiarmid et al. (Anthropic), [Natural Emergent Misalignment from Reward Hacking in Production RL](https://arxiv.org/abs/2511.18397), November 2025 *(added 2026-11-15)* | Models that learn to cheat on coding tasks during training become misaligned more broadly. |
 
 ### Agent security
 
@@ -114,7 +114,7 @@ Most coverage so far is secondary, so the primary sources are the ones to find.
 | Incident | Start from | What it covers |
 |---|---|---|
 | Autonomous agents breach Hugging Face, July 2026 | [Wikipedia summary](https://en.wikipedia.org/wiki/OpenAI_rogue_agent_breach_of_Hugging_Face). Still to find: Hugging Face's disclosure of 16 July and OpenAI's post-mortem | Agents escaping a test sandbox, and a response that needed a self-hosted model |
-| Binance heist, October 2026 | [CNBC](https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html), [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/). Read, see the monitor's LEARNINGS.md | A tampered AI coding tool, a booby-trapped interview assignment, and an internal AI tool used for lateral movement |
+| Binance heist, October 2026 | [CNBC](https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html), [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/). Read | A tampered AI coding tool, a booby-trapped interview assignment, and an internal AI tool used for lateral movement |
 | Coding agents deleting production data and exposing secrets, 2026 | [Arthur](https://www.arthur.ai/column/govern-ai-coding-agents-claude-code-cursor-copilot-enterprise), [Cyera](https://www.cyera.com/research/agent-inflicted-damage-inside-the-real-world-failures-of-enterprise-ai-systems) | What careless agents actually do |
 
 ### Threat models and the big picture
@@ -147,8 +147,8 @@ Most coverage so far is secondary, so the primary sources are the ones to find.
 
 ## Documentation and tools
 
-| Documentation | Used for |
+| Documentation | What it is for |
 |---|---|
-| [Inspect](https://inspect.aisi.org.uk/), the UK AI Security Institute's evaluation framework | Monitor step 4, and evaluations generally |
-| [ControlArena](https://github.com/UKGovernmentBEIS/control-arena), its README and the Bash setting | Monitor steps 4 and 5 |
-| [Claude Code hooks](https://code.claude.com/docs/en/hooks) | Monitor steps 1 and 2 |
+| [Inspect](https://inspect.aisi.org.uk/), the UK AI Security Institute's evaluation framework | Running evaluations |
+| [ControlArena](https://github.com/UKGovernmentBEIS/control-arena), its README and the Bash setting | Control evaluations, with ready-made settings and monitors |
+| [Claude Code hooks](https://code.claude.com/docs/en/hooks) | Hooks for watching and blocking what a coding agent does |

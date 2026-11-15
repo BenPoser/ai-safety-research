@@ -65,8 +65,8 @@ work if the attacker can tell that it is being resampled?
 
 ### How does it connect to what I have read or built?
 
-Prompts, if useful: the monitor's hook judges one command at a time. Which multi-step attacks
-would it miss? What would resampling look like inside a `PreToolUse` hook?
+Prompts, if useful: how does this build on the AI Control paper? Which multi-step attacks would a
+monitor that judges one command at a time miss?
 
 ## Questions
 
