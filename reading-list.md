@@ -39,28 +39,28 @@ A suggested order, mixing the area I know best with the ones I have not started:
 
 ### Videos
 
-| Video | Channel | Notes |
-|---|---|---|
-| [Using Dangerous AI, But Safely?](https://www.youtube.com/watch?v=0pgEMWy70Qk) | Robert Miles AI Safety | A walk-through of the Greenblatt et al. AI Control paper. See the [note](notes/papers/2023-greenblatt-ai-control.md). |
-| [9 Examples of Specification Gaming](https://www.youtube.com/watch?v=nKJlF-olKmg) | Robert Miles AI Safety | Reward hacking and specification gaming, with examples. |
-| [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44), 2015 | SethBling | Watched a long time ago. A very interesting example of how AI can take unusual and unexpected routes to reach a goal. |
-| [The Waluigi Effect: Microsoft's Disastrous AI Experiment](https://www.youtube.com/watch?v=LKiHk6OHfTA) | Reuben Adams | The Waluigi effect. |
-| [Roman Yampolskiy - AI: Unexplainable, Unpredictable, Uncontrollable](https://www.youtube.com/watch?v=-cDavlXeFAc), March 2026 | Science, Technology & the Future | A Future Day 2026 talk and Q&A arguing that advanced AI cannot be fully explained, predicted or controlled. The books and papers he mentions are under [Roman Yampolskiy](#roman-yampolskiy) below. |
-| [Transformers, the tech behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M) (Deep Learning chapter 5) | 3Blue1Brown | How transformers and LLMs work. |
-| [Hugging Face: Why AI Might Kill Us](https://www.youtube.com/watch?v=yudBtXgr5UE), August 2026 | Hoog | The video that made me aware of the channel. |
-| [What did Amodei see?](https://www.youtube.com/watch?v=e2gqBW0j-VU), September 2026 | Hoog | |
-| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=lZh0o_X6l7I), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which is on the list below. |
-| [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=4KCpGLaA4DY), November 2026 | Hoog | |
+| Video | Channel | Notes | Summary |
+|---|---|---|---|
+| [Using Dangerous AI, But Safely?](https://www.youtube.com/watch?v=0pgEMWy70Qk) | Robert Miles AI Safety | A walk-through of the Greenblatt et al. AI Control paper. See the [note](notes/papers/2023-greenblatt-ai-control.md). | [Summary](notes/videos/2024-miles-using-dangerous-ai-safely.md) |
+| [9 Examples of Specification Gaming](https://www.youtube.com/watch?v=nKJlF-olKmg) | Robert Miles AI Safety | Reward hacking and specification gaming, with examples. | [Summary](notes/videos/2020-miles-specification-gaming.md) |
+| [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44), 2015 | SethBling | Watched a long time ago. A very interesting example of how AI can take unusual and unexpected routes to reach a goal. | [Summary](notes/videos/2015-sethbling-mario.md) |
+| [The Waluigi Effect: Microsoft's Disastrous AI Experiment](https://www.youtube.com/watch?v=LKiHk6OHfTA) | Reuben Adams | The Waluigi effect. | [Summary](notes/videos/2026-adams-waluigi-effect.md) |
+| [Roman Yampolskiy - AI: Unexplainable, Unpredictable, Uncontrollable](https://www.youtube.com/watch?v=-cDavlXeFAc), March 2026 | Science, Technology & the Future | A Future Day 2026 talk and Q&A arguing that advanced AI cannot be fully explained, predicted or controlled. The books and papers he mentions are under [Roman Yampolskiy](#roman-yampolskiy) below. | [Summary](notes/videos/2026-yampolskiy-unexplainable-uncontrollable.md) |
+| [Transformers, the tech behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M) (Deep Learning chapter 5) | 3Blue1Brown | How transformers and LLMs work. | [Summary](notes/videos/2024-3blue1brown-transformers.md) |
+| [Hugging Face: Why AI Might Kill Us](https://www.youtube.com/watch?v=OO225IfoR3s), August 2026 | Hoog | The video that made me aware of the channel. | [Summary](notes/videos/2026-hoog-hugging-face.md) |
+| [What did Amodei see?](https://www.youtube.com/watch?v=ZhsWaYRjk0U), September 2026 | Hoog | | [Summary](notes/videos/2026-hoog-what-did-amodei-see.md) |
+| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which is on the list below. | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
+| [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=wKfnL_wHafs), November 2026 | Hoog | | [Summary](notes/videos/2026-hoog-zuckerberg-superintelligence.md) |
 
 ### Podcasts
 
-| Episode | Notes |
-|---|---|
-| 80,000 Hours, [An AI disaster hits. The president calls Xi. Then what?](https://www.nonzero.org/p/unlocked-debating-the-ai-china-question), Jeremie Harris, crosspost from NonZero, November 2026 | Wargaming a US–China response to an AI disaster. |
-| 80,000 Hours, [Your AI crash course starts here](https://80000hours.org/podcast/on-artificial-intelligence/), November 2026 | Their pick of the 10 best episodes for getting up to speed on transformative AI. A good source for what to listen to next. |
-| 80,000 Hours, [The US is building the smartest AI. China is running a different race](https://80000hours.org/podcast/episodes/china-ai-race-chips-slowdown/), Luisa Rodriguez, November 2026 | How China's best models stay about six months behind America's with far less computing power. |
-| 80,000 Hours, [Is Anthropic on the cusp of RSI? Inside the redacted METR report](https://80000hours.org/podcast/episodes/metr-anthropic-recursive-self-improvement-RSI/), Luisa Rodriguez, November 2026 | METR's independent assessment of AI speeding up AI research at Anthropic, after 11 weeks inside the lab. |
-| 80,000 Hours, [How the New Congress Can Save Us From AI Disaster](https://80000hours.org/podcast/episodes/congress-ai-policy-after-midterms/), Rob Wiblin, November 2026 | AI policy after the US midterms. |
+| Episode | Notes | Summary |
+|---|---|---|
+| 80,000 Hours, [An AI disaster hits. The president calls Xi. Then what?](https://www.nonzero.org/p/unlocked-debating-the-ai-china-question), Jeremie Harris, crosspost from NonZero, November 2026 | Wargaming a US–China response to an AI disaster. | [Summary](notes/podcasts/2026-80k-harris-ai-china.md) |
+| 80,000 Hours, [Your AI crash course starts here](https://80000hours.org/podcast/on-artificial-intelligence/), November 2026 | Their pick of the 10 best episodes for getting up to speed on transformative AI. A good source for what to listen to next. | [Summary](notes/podcasts/2026-80k-ai-crash-course.md) |
+| 80,000 Hours, [The US is building the smartest AI. China is running a different race](https://80000hours.org/podcast/episodes/china-ai-race-chips-slowdown/), Luisa Rodriguez, November 2026 | How China's best models stay about six months behind America's with far less computing power. | [Summary](notes/podcasts/2026-80k-china-different-race.md) |
+| 80,000 Hours, [Is Anthropic on the cusp of RSI? Inside the redacted METR report](https://80000hours.org/podcast/episodes/metr-anthropic-recursive-self-improvement-RSI/), Luisa Rodriguez, November 2026 | METR's independent assessment of AI speeding up AI research at Anthropic, after 11 weeks inside the lab. | [Summary](notes/podcasts/2026-80k-metr-rsi.md) |
+| 80,000 Hours, [How the New Congress Can Save Us From AI Disaster](https://80000hours.org/podcast/episodes/congress-ai-policy-after-midterms/), Rob Wiblin, November 2026 | AI policy after the US midterms. | [Summary](notes/podcasts/2026-80k-congress-after-midterms.md) |
 
 ### Channels and podcasts I follow
 
