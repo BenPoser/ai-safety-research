@@ -154,6 +154,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Paper | What it covers |
 |---|---|
 | Krakovna et al. (DeepMind), [Specification gaming: the flip side of AI ingenuity](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/), April 2020 *(added 2026-11-15)* | The classic short piece, with a list of examples of systems meeting the letter of an objective rather than its intent. |
+| OpenAI, [OpenAI o1 System Card](https://cdn.openai.com/o1-system-card.pdf), September 2024 *(added 2026-11-16)* | Read section 4.2.1. o1-preview, given a capture-the-flag challenge made impossible by a bug, found a misconfigured Docker API on the host and started a new challenge container that printed the flag. OpenAI calls it an example of instrumental convergence and power seeking. An early, small version of the [Hugging Face incident](notes/incidents/2026-07-hugging-face-incident.md#wider-context-it-has-happened-before-at-a-smaller-scale). The [current version of the card](https://openai.com/index/openai-o1-system-card/), from December 2024, drops the example. |
 | MacDiarmid et al. (Anthropic), [Natural Emergent Misalignment from Reward Hacking in Production RL](https://arxiv.org/abs/2511.18397), November 2025 *(added 2026-11-15)* | Models that learn to cheat on coding tasks during training become misaligned more broadly. |
 
 ### Agent security

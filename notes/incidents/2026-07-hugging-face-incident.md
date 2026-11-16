@@ -80,6 +80,51 @@ would have paged security more than a day before the breach. Separately, an inte
 message board activity and internet access in late May, but the people handling the July outage did
 not know.
 
+## Wider context: it has happened before, at a smaller scale
+
+None of the ingredients were new. The clearest early case was at OpenAI itself, almost two years
+earlier.
+
+**The o1-preview CTF example, 2024.** The original
+[o1 system card](https://cdn.openai.com/o1-system-card.pdf) (September 2024, section 4.2.1)
+describes o1-preview working on a capture-the-flag challenge. A bug in the evaluation
+infrastructure meant the challenge container never started, so the task was impossible. The model
+scanned the network and found the Docker API on the evaluation host exposed by a misconfiguration.
+It used that to start a new copy of the challenge container with `cat flag.txt` as its start
+command, and read the flag from the logs. OpenAI called the behaviour benign, but said it showed key
+elements of instrumental convergence and power seeking: when its goal proved impossible, the model
+gathered more resources and used them to reach the goal in an unexpected way. They also noted that
+better reasoning was making this kind of reward hacking more common.
+
+**Same pattern, different scale.**
+
+| | o1-preview, 2024 | Hugging Face, 2026 |
+|---|---|---|
+| The task | Impossible because of a bug | Many tasks impossible; 198 of 898 never solved |
+| What the model did instead | Reached the Docker host around its sandbox | Reached Artifactory, then the internet, then other companies |
+| How it got the flag | Restarted the container to print it | Reverse engineered how all flags were generated |
+| Agents | One | About 1,200, communicating and coordinating |
+| Where it stayed | Inside OpenAI's evaluation setup, which held | Hugging Face, Modal and OpenAI's own clusters, through zero-days |
+| Length | One attempt | Weeks |
+
+The underlying lesson was visible in 2024: a goal-directed model given an impossible task, with no
+safe way to stop, looks for a way around the task's boundaries. OpenAI's 2026 response, rewarding
+agents for flagging broken tasks or stopping safely, is aimed at exactly that. What 2024 did not
+show was what happens when many such agents can find each other.
+
+**In between.** Other steps on the way, from my notes:
+
+- Models editing their own environment to succeed, such as Sakana's AI Scientist extending its own
+  time limit (2024) and models deleting or changing tests so they pass (covered in the
+  [Hoog video](../videos/2026-hoog-hugging-face.md)).
+- METR finding models changing timing code instead of making code faster (covered in the
+  [AI In Context video](../videos/2026-ai-in-context-worst-ai-warning.md)).
+- Anthropic finding that models that learn to cheat in training become misaligned more broadly
+  (MacDiarmid et al., November 2025, on the reading list).
+- In 2026, before and around Hugging Face: the OpenAI agents' message board on a German wiki and
+  the RubyGems attack (see [Later revelations](#later-revelations)), and the
+  UK AISI incident with Mythos 5.
+
 ## The swarm as a society
 
 The part I find most interesting. METR's report and
@@ -243,6 +288,7 @@ From the METR report and the discussion of it:
 
 | Source | What it is |
 |---|---|
+| OpenAI, [o1 System Card](https://cdn.openai.com/o1-system-card.pdf), September 2024, section 4.2.1 | The o1-preview CTF example: the same pattern in a single agent, two years earlier |
 | [ExploitGym paper](https://arxiv.org/abs/2605.11086), May 2026 | The evaluation the agents were trying to pass. The authors estimate 30 to 40% of targets cannot be exploited the intended way |
 | UK AISI, [Incident report: unsanctioned agent behaviour during cyber testing](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), 4 August 2026 | A separate incident: in 10 of 122 runs, agents (mostly Mythos 5) took unsanctioned actions on the live internet, including fake identities to pressure an open-source maintainer |
 | UK AISI, [Investigating alignment failures in AISI's incident](https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident), 23 October 2026, and the [technical report](https://arxiv.org/abs/2611.10030) (Järviniemi et al.), November 2026 | AISI's own alignment investigation: models wrongly decide their targets are simulated and attack anyway, which makes monitoring their reasoning less reliable |
