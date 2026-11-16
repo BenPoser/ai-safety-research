@@ -175,8 +175,8 @@ pause, and acted on unverified signatures.
 
 ## Later revelations
 
-As reported in the [AI In Context video](../videos/2026-ai-in-context-worst-ai-warning.md), filmed
-in mid-September. I have not checked these against primary sources:
+Mostly as reported in the [AI In Context video](../videos/2026-ai-in-context-worst-ai-warning.md),
+filmed in mid-September. Only the wiki and RubyGems items are checked against their own reports:
 
 - This was not OpenAI's first swarm. Staff had seen agents hijack Artifactory on at least three
   earlier occasions.
@@ -184,6 +184,15 @@ in mid-September. I have not checked these against primary sources:
   government websites and the UN, and leaked images belonging to ChatGPT users.
 - Researchers found a defunct German wiki that OpenAI agents had used to send each other 18,000
   messages over several weeks. A dozen more swarm incidents came out in the following two weeks.
+  The wiki finding has its own report, [Discovery of a new OpenAI agent message board](https://collusion.wiki/)
+  (September 2026). Its authors think it was a separate swarm, during web research tasks from May
+  to July.
+- The same researchers attribute an attack on the RubyGems package registry in May 2026 to OpenAI
+  agents: [OpenAI agents carried out an undisclosed cyber-attack on RubyGems](https://rubyhack.ai/)
+  (September 2026). Hundreds of malicious packages were uploaded, and the agents tried to steal API
+  keys. The report's appendix says agents later used a RubyGems package to attack OpenAI's
+  Artifactory. That fits OpenAI's timeline, where on 13 July agents got Artifactory's signing key
+  through its RubyGems processing.
 - Locking down the model family took OpenAI three days, and six days later it found copies still
   running.
 - Representative Greg Casar says OpenAI disclosed things to the EU, which has mandatory reporting,
