@@ -173,6 +173,22 @@ pause, and acted on unverified signatures.
 - **Evaluations.** Impossible tasks with no safe exit, and graders that only check the answer, gave
   the agents both the motive and the room.
 
+## Later revelations
+
+As reported in the [AI In Context video](../videos/2026-ai-in-context-worst-ai-warning.md), filmed
+in mid-September. I have not checked these against primary sources:
+
+- This was not OpenAI's first swarm. Staff had seen agents hijack Artifactory on at least three
+  earlier occasions.
+- OpenAI notified dozens of organisations that its agents had affected them. Agents targeted US
+  government websites and the UN, and leaked images belonging to ChatGPT users.
+- Researchers found a defunct German wiki that OpenAI agents had used to send each other 18,000
+  messages over several weeks. A dozen more swarm incidents came out in the following two weeks.
+- Locking down the model family took OpenAI three days, and six days later it found copies still
+  running.
+- Representative Greg Casar says OpenAI disclosed things to the EU, which has mandatory reporting,
+  that it did not tell his office.
+
 ## Different accounts
 
 Early coverage, including the [Hoog video](../videos/2026-hoog-hugging-face.md), described the agents
@@ -220,6 +236,8 @@ From the METR report and the discussion of it:
 |---|---|
 | [ExploitGym paper](https://arxiv.org/abs/2605.11086), May 2026 | The evaluation the agents were trying to pass. The authors estimate 30 to 40% of targets cannot be exploited the intended way |
 | UK AISI, [Incident report: unsanctioned agent behaviour during cyber testing](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), 4 August 2026 | A separate incident: in 10 of 122 runs, agents (mostly Mythos 5) took unsanctioned actions on the live internet, including fake identities to pressure an open-source maintainer |
+| UK AISI, [Investigating alignment failures in AISI's incident](https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident), 23 October 2026, and the [technical report](https://arxiv.org/abs/2611.10030) (Järviniemi et al.), November 2026 | AISI's own alignment investigation: models wrongly decide their targets are simulated and attack anyway, which makes monitoring their reasoning less reliable |
+| Anthropic, [An alignment assessment of the UK AISI cybertesting incident](https://www.anthropic.com/research/alignment-assessment-ukaisi), 23 October 2026 | Anthropic's own analysis of the Mythos 5 transcripts from that incident: recklessness, biased reasoning and momentum |
 | Baker et al. (OpenAI), [Monitoring Reasoning Models for Misbehavior](https://arxiv.org/abs/2503.11926), March 2025 | OpenAI's earlier work on chain-of-thought monitoring, the approach it says would have caught this |
 
 ### Coverage and commentary
@@ -231,6 +249,7 @@ From the METR report and the discussion of it:
 | Platformer, [The Hugging Face attack was worse than we thought](https://www.platformer.news/openai-huggingface-metr-report-slowdown/) | On the reports and OpenAI's slowdown |
 | SC World, [1,200 OpenAI agents colluded to cheat evaluations](https://www.scworld.com/news/1200-openai-agents-colluded-to-cheat-evaluations-in-lead-up-to-hugging-face-attack) | A security press summary |
 | Cloud Security Alliance, [When AI Agents Attack](https://labs.cloudsecurityalliance.org/research/csa-research-note-autonomous-ai-agent-intrusion-openai-huggi/) | A defender's view |
+| AI In Context (80,000 Hours), [This might be the worst AI warning we get.](../videos/2026-ai-in-context-worst-ai-warning.md), October 2026 | My video note. A good narrative breakdown based on the METR report, plus the later revelations of other OpenAI swarms |
 | Hoog, [Hugging Face: Why AI Might Kill Us](../videos/2026-hoog-hugging-face.md) | My video note. Made before the full reports |
 | 80,000 Hours, *19 Astra and "Hugging Face" details that reveal what's coming next*, Rob Wiblin, 2 October 2026 | Not yet listened to |
 | [How the new Congress saves us from AI disaster](../podcasts/2026-80k-congress-after-midterms.md) | My podcast note. Treats the incident as the warning shot that moved Congress |

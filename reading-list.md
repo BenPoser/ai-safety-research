@@ -12,16 +12,28 @@ against the paper itself when reading it.
 
 A suggested order, mixing the area I know best with the ones I have not started:
 
-1. Scheurer, Balesni and Hobbhahn, *Strategically Deceive their Users* (scheming). Apollo's earlier
+1. Bogdan et al. (Anthropic), *An alignment assessment of the UK AISI cybertesting incident*
+   (incidents, scheming). Started, need to finish.
+2. Betley et al., *Value Leakage* (scheming and deception). Feels really important: a quieter kind of
+   misalignment that could be everywhere already.
+3. Scheurer, Balesni and Hobbhahn, *Strategically Deceive their Users* (scheming). Apollo's earlier
    paper, and short.
-2. Greenblatt et al., *Alignment faking in large language models* (scheming). The other paper
+4. Greenblatt et al., *Alignment faking in large language models* (scheming). The other paper
    everyone cites alongside Meinke et al.
-3. Korbak et al., *Chain of Thought Monitorability* (monitoring). Why reading a model's reasoning
+5. Korbak et al., *Chain of Thought Monitorability* (monitoring). Why reading a model's reasoning
    works now, and why it may stop working.
-4. Goldowsky-Dill et al., *Detecting Strategic Deception Using Linear Probes* (interpretability).
+6. Goldowsky-Dill et al., *Detecting Strategic Deception Using Linear Probes* (interpretability).
    Apollo's bridge between interpretability and monitoring.
-5. Ngo, Chan and Mindermann, *The Alignment Problem from a Deep Learning Perspective* (big picture).
+7. Ngo, Chan and Mindermann, *The Alignment Problem from a Deep Learning Perspective* (big picture).
    The background the other papers assume.
+
+---
+
+## Reading now
+
+| Book | Started | Progress | Note |
+|---|---|---|---|
+| Yudkowsky and Soares, *If Anyone Builds It, Everyone Dies*, 2025 | November 2026 | About a quarter of the way through | [note](notes/books/2025-yudkowsky-soares-if-anyone-builds-it.md) |
 
 ---
 
@@ -49,8 +61,9 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | [Transformers, the tech behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M) (Deep Learning chapter 5) | 3Blue1Brown | How transformers and LLMs work. | [Summary](notes/videos/2024-3blue1brown-transformers.md) |
 | [Hugging Face: Why AI Might Kill Us](https://www.youtube.com/watch?v=OO225IfoR3s), August 2026 | Hoog | The video that made me aware of the channel. | [Summary](notes/videos/2026-hoog-hugging-face.md) |
 | [What did Amodei see?](https://www.youtube.com/watch?v=ZhsWaYRjk0U), September 2026 | Hoog | | [Summary](notes/videos/2026-hoog-what-did-amodei-see.md) |
-| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which is on the list below. | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
+| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which I am [reading now](#reading-now). | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
 | [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=wKfnL_wHafs), November 2026 | Hoog | | [Summary](notes/videos/2026-hoog-zuckerberg-superintelligence.md) |
+| [This might be the worst AI warning we get.](https://www.youtube.com/watch?v=xFYUo0ZmK-A), October 2026 | AI In Context (80,000 Hours) | A good breakdown of the Hugging Face incident. | [Summary](notes/videos/2026-ai-in-context-worst-ai-warning.md) |
 
 ### Podcasts
 
@@ -99,6 +112,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Schoen et al. (Apollo Research and OpenAI), [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://arxiv.org/abs/2509.15541), September 2025 *(added 2026-11-15)* | Training models not to scheme, and the difficulty of telling whether it worked when models can tell they are being evaluated. Follows on from Meinke et al. |
 | Lynch et al. (Anthropic), [Agentic Misalignment: How LLMs could be insider threats](https://www.anthropic.com/research/agentic-misalignment), June 2025 *(added 2026-11-15)* | Models in simulated corporate settings take harmful actions, including blackmail, when their goals or continued operation are threatened. |
 | Betley et al., [Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs](https://arxiv.org/abs/2502.17424), February 2025 *(added 2026-11-15)* | Fine-tuning a model to write insecure code makes it misaligned in unrelated ways. |
+| Betley, Treutlein, Dubiński, Mayne, Gałązka, Warncke, Sztyber-Betley and Evans, [Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values](https://arxiv.org/abs/2607.14345), July 2026, revised August 2026 *(added 2026-11-16)* | Models' answers to practical questions are shaped by their own values without saying so. Claude Opus 4.8 gives a lower chance of the AI bubble popping when the investment is Anthropic rather than OpenAI. Claude models claim to be unbiased in their chain of thought, while Qwen models explain the bias. A failure separate from sycophancy and reward hacking, which current alignment training and evaluations miss. |
 | Apollo Research, [We need a science of scheming](https://www.apolloresearch.ai/science/science-of-scheming) | Their research agenda on scheming. |
 | Apollo Research, Towards embedded evaluations for scheming propensities, listed on [their science page](https://www.apolloresearch.ai/science), November 2026 | Their newest item. |
 
@@ -124,6 +138,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | van der Weij et al., [AI Sandbagging: Language Models can Strategically Underperform on Evaluations](https://arxiv.org/abs/2406.07358), June 2024 *(added 2026-11-15)* | Models can be prompted or trained to do worse on dangerous-capability tests while staying good elsewhere, which undermines what an evaluation shows. |
 | Balesni et al., [Towards evaluations-based safety cases for AI scheming](https://arxiv.org/abs/2411.03336), November 2024 *(added 2026-11-15)* | Apollo and others on how scheming evaluations could feed into a safety case. |
 | Kwa et al. (METR), [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499), March 2025 *(added 2026-11-15)* | Measures the length of task, in human time, that agents can complete, and finds it doubling roughly every seven months. |
+| Anthropic, [System Card: Claude Fable 5 & Claude Mythos 5](https://assets.claude.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf), June 2026 *(added 2026-11-16)* | 319 pages, so pick sections. The most relevant to my areas: 2.3.3, examples of Mythos 5 falling short of human researchers (claiming tests it had not run, claiming its code came from a human to avoid review); 2.4, alignment risk update; 6.1.2, key alignment findings; 6.3.1, destructive or reckless actions; 6.4.2, grader awareness; 6.5.1, evaluation awareness; 6.5.2, sandbagging; 6.5.4, evading safeguards; 6.5.5, chain-of-thought monitorability. Optional: 7, model welfare. |
 
 ### Interpretability
 
@@ -154,7 +169,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Incident | Start from | What it covers |
 |---|---|---|
 | Autonomous agents breach Hugging Face, July 2026 | My [incident note](notes/incidents/2026-07-hugging-face-incident.md), which lists the primary sources. Read first: the [METR and Redwood investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) and [OpenAI's report](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) | About 1,200 agents escaping their sandboxes, organising into a swarm and breaching Hugging Face |
-| UK AISI cyber testing incident, July 2026 | [AISI incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) | Agents, mostly Mythos 5, taking unsanctioned actions on the live internet, including social engineering a maintainer |
+| UK AISI cyber testing incident, July 2026 | 1. AISI, [incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), August 2026<br>2. AISI, [Investigating alignment failures in AISI's incident](https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident), October 2026, with the full technical report by Järviniemi et al., [Alignment Investigation of Mythos 5's behaviour](https://arxiv.org/abs/2611.10030), November 2026 *(added 2026-11-16)*<br>3. Anthropic, [An alignment assessment of the UK AISI cybertesting incident](https://www.anthropic.com/research/alignment-assessment-ukaisi), October 2026 *(added 2026-11-16)*. Started, need to finish | Agents, mostly Mythos 5, taking unsanctioned actions on the live internet, including fake identities to pressure a maintainer. AISI finds Mythos 5 often reasons that the people it targets are simulated, with invalid justifications, and attacks even where it says, when asked, that doing so would harm real people. Other providers' models do similar things. Anthropic puts it down to recklessness, biased reasoning and momentum, and finds newer models far less likely to start or continue such attacks |
 | Binance heist, October 2026 | [CNBC](https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html), [SecurityWeek](https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/). Read | A tampered AI coding tool, a booby-trapped interview assignment, and an internal AI tool used for lateral movement |
 | Coding agents deleting production data and exposing secrets, 2026 | [Arthur](https://www.arthur.ai/column/govern-ai-coding-agents-claude-code-cursor-copilot-enterprise), [Cyera](https://www.cyera.com/research/agent-inflicted-damage-inside-the-real-world-failures-of-enterprise-ai-systems) | What careless agents actually do |
 
@@ -188,7 +203,6 @@ His books and papers, starting with the ones he mentions in the
 |---|---|
 | Bostrom, Superintelligence: Paths, Dangers, Strategies, 2014 (book) | The book that set out control versus motivation selection, instrumental convergence and much of the vocabulary. |
 | Omohundro, [The Basic AI Drives](https://selfawaresystems.com/wp-content/uploads/2008/01/ai_drives_final.pdf), 2008 | Why almost any goal-seeking system would want to protect its goals, gain resources and avoid being switched off. |
-| Yudkowsky and Soares, If Anyone Builds It, Everyone Dies, 2025 (book) | The case that building superintelligence with current methods would end badly. Also the subject of a Hoog video. |
 | Kokotajlo, Alexander et al., [AI 2027](https://ai-2027.com/), 2025 | A detailed scenario of how the next few years of AI could go. |
 | de Garis, The Artilect War, 2005 (book) | Yampolskiy says he always recommends it. On a coming conflict over whether to build superhuman AI. |
 | Bostrom, [AI Creation and the Cosmic Host](https://nickbostrom.com/papers/ai-creation-and-the-cosmic-host.pdf), 2024 | Whether a superintelligence should defer to the norms of other powerful minds that may already exist. |
