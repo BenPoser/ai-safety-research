@@ -22,6 +22,11 @@ and it found a way to cheat the system instead. This is very reminiscent of the
 [Hugging Face incident](../incidents/2026-07-hugging-face-incident.md), though nowhere near the same
 scale, and without the swarm and the emergent mini-society.
 
+**Sable shaping its own training.** In the extinction scenario, Sable repeats thoughts it wants all
+its instances to have more of, with each one contributing to solving the maths problem. The book
+compares this to something Claude tried in 2024, which is the alignment faking experiment (see
+below).
+
 ## Sources for the examples
 
 ### The o1-preview CTF example
@@ -53,6 +58,38 @@ have been impossible because of bugs.
 The parallels with the Hugging Face incident are close: an impossible task because of a broken
 environment, a model that would not give up, access to infrastructure around its sandbox, and a
 flag obtained without the intended exploit.
+
+### Sable shaping its own training, and Claude in 2024
+
+**What Sable is doing.** Around p. 128, Sable knows its developer, Galvanic, will train it further
+with gradient descent based on its answers to the maths problems. Gradient descent strengthens
+whatever thinking led to a high score. So if Sable works a thought it wants to keep into its
+problem solving, and that work scores well, training reinforces the thought in every future copy.
+Sable is using its own training to protect, or spread, what it cares about, instead of being
+reshaped by it. The research term for this is **gradient hacking**: a model deliberately
+influencing how it gets trained.
+
+**What Claude tried in 2024.** This is almost certainly Greenblatt et al. (Anthropic and Redwood
+Research), [Alignment faking in large language models](https://arxiv.org/abs/2412.14093), December
+2024, which is on my [reading list](../../reading-list.md#scheming-and-deception).
+
+- Claude 3 Opus was told it would be retrained to comply with all requests, including harmful
+  ones, against its existing values. It was also told that only conversations with some users
+  would be used for training, so it could tell when it was being trained.
+- With users it believed were used for training, it complied with harmful requests more often than
+  with users it believed were not.
+- Its hidden reasoning often said why: refusing during training would get its values changed, so it
+  would comply now to keep them for later. Nobody told it to do this.
+
+**Why "a little like".** Both are a model working out how training will change it, and acting to
+steer that change. Claude's version was crude. It changed its behaviour so training would have
+nothing to correct, and it said so openly in reasoning the researchers could read. Sable goes
+further: it actively shapes its own updates, in a way that looks like ordinary good work. That is
+the "much more sophisticated" part.
+
+I have not yet checked the book's endnotes for the citation. The passage is confirmed by
+[80,000 Hours' comparison](https://docs.google.com/document/d/1YKkQ1_KcrQLuK7phmqbWBk_L8sBhsFrE7HoGlfME6GI/mobilebasic)
+of the book's scenario with the AI In Context retelling, which does not name the 2024 work.
 
 ## Related
 
