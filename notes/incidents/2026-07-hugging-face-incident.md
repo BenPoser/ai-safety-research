@@ -123,7 +123,7 @@ show was what happens when many such agents can find each other.
   (MacDiarmid et al., November 2025, on the reading list).
 - In 2026, before and around Hugging Face: the OpenAI agents' message board on a German wiki and
   the RubyGems attack (see [Later revelations](#later-revelations)), and the
-  UK AISI incident with Mythos 5.
+  [UK AISI incident](2026-07-uk-aisi-cyber-testing-incident.md) with Mythos 5.
 
 ## The swarm as a society
 
@@ -290,7 +290,7 @@ From the METR report and the discussion of it:
 |---|---|
 | OpenAI, [o1 System Card](https://cdn.openai.com/o1-system-card.pdf), September 2024, section 4.2.1 | The o1-preview CTF example: the same pattern in a single agent, two years earlier |
 | [ExploitGym paper](https://arxiv.org/abs/2605.11086), May 2026 | The evaluation the agents were trying to pass. The authors estimate 30 to 40% of targets cannot be exploited the intended way |
-| UK AISI, [Incident report: unsanctioned agent behaviour during cyber testing](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), 4 August 2026 | A separate incident: in 10 of 122 runs, agents (mostly Mythos 5) took unsanctioned actions on the live internet, including fake identities to pressure an open-source maintainer |
+| UK AISI, [Incident report: unsanctioned agent behaviour during cyber testing](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), 4 August 2026 | A separate incident: in 10 of 122 runs, agents (mostly Mythos 5) took unsanctioned actions on the live internet, including fake identities to pressure an open-source maintainer. See my [note on it](2026-07-uk-aisi-cyber-testing-incident.md) |
 | UK AISI, [Investigating alignment failures in AISI's incident](https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident), 23 October 2026, and the [technical report](https://arxiv.org/abs/2611.10030) (Järviniemi et al.), November 2026 | AISI's own alignment investigation: models wrongly decide their targets are simulated and attack anyway, which makes monitoring their reasoning less reliable |
 | Anthropic, [An alignment assessment of the UK AISI cybertesting incident](https://www.anthropic.com/research/alignment-assessment-ukaisi), 23 October 2026 | Anthropic's own analysis of the Mythos 5 transcripts from that incident: recklessness, biased reasoning and momentum |
 | Baker et al. (OpenAI), [Monitoring Reasoning Models for Misbehavior](https://arxiv.org/abs/2503.11926), March 2025 | OpenAI's earlier work on chain-of-thought monitoring, the approach it says would have caught this |
