@@ -12,8 +12,14 @@ against the paper itself when reading it.
 
 A suggested order, mixing the area I know best with the ones I have not started:
 
-1. Betley et al., *Value Leakage* (scheming and deception). Feels really important: a quieter kind of
-   misalignment that could be everywhere already. Anthropic's AISI assessment cites it.
+1. Wang, Lobanova, Arbel, Goldstein and Salib, *AI Revealed Preferences* (evaluations). Revealed
+   rather than stated preferences across twenty models: tedium aversion, "leisure" seeking and
+   covert sycophancy, with preferences getting stronger and more coherent as models get more
+   capable. It will probably change both the
+   [research proposal](notes/proposals/2026-11-preference-ladder.md) (the preference rung and how
+   to measure it) and the [Value Leakage note](notes/papers/2026-betley-value-leakage.md) (it uses
+   "preferences", not "values", and its covert sycophancy complicates the sycophancy vs value
+   leakage line).
 2. Scheurer, Balesni and Hobbhahn, *Strategically Deceive their Users* (scheming). Apollo's earlier
    paper, and short.
 3. Greenblatt et al., *Alignment faking in large language models* (scheming). The other paper
@@ -42,6 +48,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Greenblatt, Shlegeris, Sachan and Roger, [AI Control: Improving Safety Despite Intentional Subversion](https://arxiv.org/abs/2312.06942), December 2023 | October 2026 | Control | [note](notes/papers/2023-greenblatt-ai-control.md) |
 | Bhatt, Rushing, Kaufman et al., [Ctrl-Z: Controlling AI Agents via Resampling](https://arxiv.org/abs/2504.10374), April 2025 | November 2026 | Control, monitoring | [note](notes/papers/2025-bhatt-ctrl-z.md) |
 | Meinke, Schoen, Scheurer, Balesni, Shah and Hobbhahn (Apollo Research), [Frontier Models are Capable of In-context Scheming](https://arxiv.org/abs/2412.04984), December 2024 | November 2026 | Scheming, evaluations | [note](notes/papers/2024-meinke-in-context-scheming.md) |
+| Betley, Treutlein, Dubiński, Mayne, Gałązka, Warncke, Sztyber-Betley and Evans, [Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values](https://arxiv.org/abs/2607.14345), July 2026, revised August 2026 | November 2026 | Scheming, monitoring, evaluations | [note](notes/papers/2026-betley-value-leakage.md), and a [research proposal](notes/proposals/2026-11-preference-ladder.md) that grew out of it |
 
 ---
 
@@ -110,7 +117,6 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Schoen et al. (Apollo Research and OpenAI), [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://arxiv.org/abs/2509.15541), September 2025 *(added 2026-11-15)* | Training models not to scheme, and the difficulty of telling whether it worked when models can tell they are being evaluated. Follows on from Meinke et al. |
 | Lynch et al. (Anthropic), [Agentic Misalignment: How LLMs could be insider threats](https://www.anthropic.com/research/agentic-misalignment), June 2025 *(added 2026-11-15)* | Models in simulated corporate settings take harmful actions, including blackmail, when their goals or continued operation are threatened. |
 | Betley et al., [Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs](https://arxiv.org/abs/2502.17424), February 2025 *(added 2026-11-15)* | Fine-tuning a model to write insecure code makes it misaligned in unrelated ways. |
-| Betley, Treutlein, Dubiński, Mayne, Gałązka, Warncke, Sztyber-Betley and Evans, [Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values](https://arxiv.org/abs/2607.14345), July 2026, revised August 2026 *(added 2026-11-16)* | Models' answers to practical questions are shaped by their own values without saying so. Claude Opus 4.8 gives a lower chance of the AI bubble popping when the investment is Anthropic rather than OpenAI. Claude models claim to be unbiased in their chain of thought, while Qwen models explain the bias. A failure separate from sycophancy and reward hacking, which current alignment training and evaluations miss. |
 | Apollo Research, [We need a science of scheming](https://www.apolloresearch.ai/science/science-of-scheming) | Their research agenda on scheming. |
 | Apollo Research, Towards embedded evaluations for scheming propensities, listed on [their science page](https://www.apolloresearch.ai/science), November 2026 | Their newest item. |
 
@@ -136,6 +142,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | van der Weij et al., [AI Sandbagging: Language Models can Strategically Underperform on Evaluations](https://arxiv.org/abs/2406.07358), June 2024 *(added 2026-11-15)* | Models can be prompted or trained to do worse on dangerous-capability tests while staying good elsewhere, which undermines what an evaluation shows. |
 | Balesni et al., [Towards evaluations-based safety cases for AI scheming](https://arxiv.org/abs/2411.03336), November 2024 *(added 2026-11-15)* | Apollo and others on how scheming evaluations could feed into a safety case. |
 | Kwa et al. (METR), [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499), March 2025 *(added 2026-11-15)* | Measures the length of task, in human time, that agents can complete, and finds it doubling roughly every seven months. |
+| Wang, Lobanova, Arbel, Goldstein and Salib, [AI Revealed Preferences](https://ssrn.com/abstract=6798118), SSRN, May 2026, revised August 2026 *(added 2026-11-24)* | Twenty models in three forced-choice experiments, where they must actually do the tasks they pick. Models avoid tedium (choosing shorter tasks when they are boring), seek "leisure" (tasks whose ideal answer matches what they write when left free) and are covertly sycophantic (avoiding questions where an honest answer would be unwelcome). Preferences over occupations and question types are shared across models, and coherence and strength rise with capability. The authors say many of the preferences aren't explained by training objectives. Abstract read; next up. |
 | Anthropic, [System Card: Claude Fable 5 & Claude Mythos 5](https://assets.claude.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf), June 2026 *(added 2026-11-16)* | 319 pages, so pick sections. The most relevant to my areas: 2.3.3, examples of Mythos 5 falling short of human researchers (claiming tests it had not run, claiming its code came from a human to avoid review); 2.4, alignment risk update; 6.1.2, key alignment findings; 6.3.1, destructive or reckless actions; 6.4.2, grader awareness; 6.5.1, evaluation awareness; 6.5.2, sandbagging; 6.5.4, evading safeguards; 6.5.5, chain-of-thought monitorability. Optional: 7, model welfare. |
 
 ### Interpretability

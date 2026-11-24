@@ -14,6 +14,7 @@ A repo for me to keep track of topics of interest in the AI Safety space.
 | [notes/incidents/](notes/incidents/) | Write-ups of real AI incidents, with the sources to read |
 | [notes/videos/](notes/videos/) | A summary of the topics covered in each video I have watched |
 | [notes/podcasts/](notes/podcasts/) | A summary of the topics covered in each podcast episode I have listened to |
+| [notes/proposals/](notes/proposals/) | Research ideas and experiment designs that grew out of my reading |
 | [notes/TEMPLATE.md](notes/TEMPLATE.md) | The template for a new paper note |
 | [log.md](log.md) | A dated log of what I did and learned |
 
@@ -22,7 +23,7 @@ A repo for me to keep track of topics of interest in the AI Safety space.
 | Area | In short | Where I am |
 |---|---|---|
 | AI control | Keeping a possibly misaligned model from causing harm, assuming it may be trying to | Two papers read |
-| Scheming and deception | Whether models pursue hidden goals and hide them from the people overseeing them | One paper read |
+| Scheming and deception | Whether models pursue hidden goals and hide them from the people overseeing them | Two papers read, one research proposal drafted |
 | Monitoring agents and their reasoning | Watching what agents do and think, and how reliable that is | Papers to read |
 | Evaluations | Measuring dangerous capabilities and propensities, and what an evaluation can and cannot show | Not started |
 | Interpretability | Reading what a model is doing from its internals rather than its outputs | Not started |
