@@ -5,7 +5,7 @@
 | Authors | Eliezer Yudkowsky and Nate Soares (MIRI) |
 | Published | September 2025 |
 | Started | 15 November 2026 |
-| Status | Reading, about a quarter of the way through |
+| Status | Finished in November 2026. Short, well written, and clear and forceful in its arguments |
 | Areas | Threat models, reward hacking |
 
 ## My notes so far

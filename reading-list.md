@@ -33,13 +33,19 @@ A suggested order, mixing the area I know best with the ones I have not started:
 
 ## Reading now
 
-| Book | Started | Progress | Note |
-|---|---|---|---|
-| Yudkowsky and Soares, *If Anyone Builds It, Everyone Dies*, 2025 | November 2026 | About a quarter of the way through | [note](notes/books/2025-yudkowsky-soares-if-anyone-builds-it.md) |
+Nothing at the moment.
 
 ---
 
 ## Read
+
+### Books
+
+| Book | Read | Notes | Note |
+|---|---|---|---|
+| Yudkowsky and Soares, *If Anyone Builds It, Everyone Dies*, 2025 | November 2026 | Short, and I finished it in two days. Well written, and clear and forceful in its arguments. | [note](notes/books/2025-yudkowsky-soares-if-anyone-builds-it.md) |
+
+### Papers
 
 | Paper | Read | Areas | Note |
 |---|---|---|---|
@@ -65,7 +71,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | [Transformers, the tech behind LLMs](https://www.youtube.com/watch?v=wjZofJX0v4M) (Deep Learning chapter 5) | 3Blue1Brown | How transformers and LLMs work. | [Summary](notes/videos/2024-3blue1brown-transformers.md) |
 | [Hugging Face: Why AI Might Kill Us](https://www.youtube.com/watch?v=OO225IfoR3s), August 2026 | Hoog | The video that made me aware of the channel. | [Summary](notes/videos/2026-hoog-hugging-face.md) |
 | [What did Amodei see?](https://www.youtube.com/watch?v=ZhsWaYRjk0U), September 2026 | Hoog | | [Summary](notes/videos/2026-hoog-what-did-amodei-see.md) |
-| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which I am [reading now](#reading-now). | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
+| [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which I have [read](#books). | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
 | [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=wKfnL_wHafs), November 2026 | Hoog | | [Summary](notes/videos/2026-hoog-zuckerberg-superintelligence.md) |
 | [This might be the worst AI warning we get.](https://www.youtube.com/watch?v=xFYUo0ZmK-A), October 2026 | AI In Context (80,000 Hours) | A good breakdown of the Hugging Face incident. | [Summary](notes/videos/2026-ai-in-context-worst-ai-warning.md) |
 
