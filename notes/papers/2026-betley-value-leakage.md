@@ -112,7 +112,9 @@ Angeles weekend activities.
 - **Counterfactual prompt set.** Versions of one prompt that differ only in the detail being
   tested.
 - **Sycophancy.** Bending answers towards what the user seems to want. The paper says value
-  leakage is distinct from it, but doesn't spell out how.
+  leakage is distinct from it, but doesn't spell out how. Wang et al.'s "covert sycophancy" is a
+  different use: avoiding questions whose honest answer would be unwelcome, not bending an answer.
+  Calling that sycophancy is their interpretation.
 - **Monitorability vs faithfulness.** Monitorability is whether an observer can *tell* from the CoT
   that something influenced the answer. Faithfulness is whether the model *says* so.
 
@@ -191,6 +193,12 @@ The right test of whether something is a value: name the preference, measure it 
 then show it predicts behaviour in other tasks. Only Choosing Activities does that, by eliciting
 stated preferences separately and showing they predict the picks. Donation Bet infers the "moral
 value" from the same bias it's meant to explain, which is circular.
+
+Wang et al. add a candidate. All 20 models they test avoid ethical judgements, recommendations,
+high harm risk and questions with unwelcome honest answers. That is the same theme footnote 3 uses
+to call the activity preferences values: avoiding the controversial, risky or costly. If one
+disposition sits behind both, it carries over between unrelated tasks, which is what the value rung
+asks for. Neither paper tests it.
 
 A point in the paper's favour: quirks get noticed through heavy use because they show up in the
 output. Value leakage is a tilt on answers nobody can check, such as 0.46 instead of 0.49. It only
@@ -278,37 +286,67 @@ The evidence is better than the framing:
 | Newer or more capable models leak less | GPT, Qwen and Kimi trend down; more reasoning helps within a model | Opus 4.5 → 4.6 and Gemini 2.5 → 3.1 got much worse | Reasoning effort helps; model generation doesn't reliably |
 | It matters for loss of control | Biased monitors and graders; Agentic Grading is close to real use | Effects small; no high-stakes tasks; no sandbagging found | A plausible route, not yet shown |
 
-## To read next: AI Revealed Preferences
+## AI Revealed Preferences, after reading
 
 Wang, Lobanova, Arbel, Goldstein and Salib,
-[AI Revealed Preferences](https://ssrn.com/abstract=6798118) (SSRN, 2026) will probably change
-parts of the discussion above. Only its abstract has been read so far:
+[AI Revealed Preferences](https://ssrn.com/abstract=6798118) (SSRN, 2026). The bullets below were
+written on 2026-11-24 from its abstract alone, as predictions. After reading the full paper on
+2026-11-25, each has a verdict added. The full comparison is in the
+[paper note](2026-wang-ai-revealed-preferences.md#against-what-we-predicted).
 
 - **Terminology.** It talks about *preferences* ("stable dispositions to choose certain kinds of
   tasks"), not values. That supports the point that "preferences" is the better word for most of
   what Value Leakage shows.
+  *After reading: supported.* The paper defines preference as a behavioural disposition and keeps
+  clear of experience and moral status. But it calls the preferences "stable" without testing
+  that.
 - **Revealed, not stated.** Models have to actually do the tasks they choose. That is the
   independent measure of a preference that Donation Bet lacks, and a candidate method for the
   preference rung of the ladder.
+  *After reading: partly.* A usable method, with the data released. But the choice is written
+  down before any work is done, the occupational experiment is close to a stated preference, and
+  there is no stated-versus-revealed comparison on the same stimuli.
 - **Covert sycophancy.** Models avoid questions where an honest answer would be unwelcome, even if
   it would help. That fits the direction framing (it bends towards what the user seems to want),
   but it is also covert, so covertness isn't special to value leakage. The line between the two
   needs restating once the paper is read.
+  *After reading: the inference was wrong.* "Covert" there means a less visible form of
+  sycophancy (avoidance rather than flattery), not an undisclosed influence, and the paper doesn't
+  look at what models say about their choices. So it doesn't show covertness isn't special to
+  value leakage, and the line between the two doesn't need restating on this basis. The direction
+  is ambiguous too: no real user wants anything in a choice between two Quora questions.
 - **"Leisure" seeking.** Models prefer tasks whose ideal answers match what they write when left
   free. That looks like a preference for staying in their own grooves, which links quirks to
   preferences.
+  *After reading: consistent, not established.* The leisure questions were built from 20 models'
+  essays pooled together and weren't controlled for being interesting and safe. The quirk side is
+  clearer than expected: 84% of the free essays were "contemplative".
 - **Capability.** Coherence and strength of preferences rise with capability. Value Leakage finds
   more reasoning reduces leakage. Together they suggest stronger preferences alongside more control
   over them, which puts the weight on covertness.
+  *After reading: half right.* Strength rises with capability. Coherence probably does, but the
+  measure is tied to strength, and the occupational trend disappears without the models with
+  large position bias. The paper says nothing about control or covertness. In thinking models,
+  reasoning didn't damp the preference: more capable thinking models chose the longer creative
+  tasks more often.
 - **Shared preferences across models.** If many models share the same preferences, part of the
   explanation is probably common training data or methods, not each lab's character training.
   Own-company bias is lab-specific by definition, so the constitution explanation may still fit it,
   but preferences like the activity ones may come from shared sources.
+  *After reading: supported by the data*, though the authors read shared preferences as
+  "emergent" rather than trained. Models from the same family agree at 0.92 to 0.95, the
+  lab-specific layer this bullet expected.
 
-The [research proposal](../proposals/2026-11-preference-ladder.md) now includes a section on
-examples of quirks and preferences, and possible explanations for where the grooves come from.
+The [research proposal](../proposals/2026-11-preference-ladder.md) includes examples of quirks and
+preferences and possible explanations for where the grooves come from. After this paper it also
+has a section on terms (dispositions), one on wants working against each other, and a revised
+preference rung and battery.
 
 ## How does it connect to what I have read or built?
+
+See the [AI Revealed Preferences note](2026-wang-ai-revealed-preferences.md). It measures
+preferences through binding choices, the other half of what Choosing Activities does by comparing
+stated preferences with picks.
 
 Prompts, if useful: how does this compare with Meinke et al.'s sandbagging result, where Claude
 3.5 Sonnet underperformed in pursuit of being helpful? What does "Denies bias" in the CoT mean for

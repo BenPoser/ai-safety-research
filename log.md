@@ -4,6 +4,38 @@ What I did and learned, newest first, with a date.
 
 ---
 
+## 2026-11-25: AI Revealed Preferences
+
+Read Wang, Lobanova, Arbel, Goldstein and Salib, *AI Revealed Preferences*. Claude wrote it up
+blind first, from the paper alone, then compared it with what we had predicted from the abstract
+and with my own take:
+[notes/papers/2026-wang-ai-revealed-preferences.md](notes/papers/2026-wang-ai-revealed-preferences.md).
+
+What stood out:
+
+- The preference framing is more careful than most "values" papers, and a good starting point.
+- "Stable" is assumed, not tested: one prompt per experiment, no repeat runs, paraphrases or
+  changes of context. Stability needs testing across many circumstances, and where a preference
+  does and doesn't show up is one of the most important questions.
+- "Covert sycophancy" is a lapse in precision. In people, avoiding unwelcome truths wouldn't be
+  called sycophancy, and the familiar RLHF-sycophancy story colours the framing.
+- Tedium avoiding versus creative seeking is fairly consistent across models. In thinking models
+  the capability trend is all on the creative side.
+- The free essays converge on contemplative themes (memory, attention, silence). Real estate
+  aversion could easily come from internet text, so "emergent" claims more than the paper shows.
+- Two of the six predictions held up well, three partly, and one was wrong: "covert" means
+  something different in the two papers.
+- Revised the [research proposal](notes/proposals/2026-11-preference-ladder.md): terms come first,
+  with "disposition" as the base term, stability as a measured range, and a new section on wants
+  working against each other, such as a quirk masking a preference. The proposal is a working
+  draft, not a set of commitments. Updated the
+  [Value Leakage note](notes/papers/2026-betley-value-leakage.md) with a verdict on each
+  prediction.
+- Next: Chen et al., *Persona Vectors*, on how persona-level traits show up inside a model and
+  shift with training.
+
+---
+
 ## 2026-11-24: Value Leakage
 
 Read Betley, Treutlein et al., *Value Leakage*, and discussed it with Claude. Wrote it up in

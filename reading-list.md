@@ -12,14 +12,12 @@ against the paper itself when reading it.
 
 A suggested order, mixing the area I know best with the ones I have not started:
 
-1. Wang, Lobanova, Arbel, Goldstein and Salib, *AI Revealed Preferences* (evaluations). Revealed
-   rather than stated preferences across twenty models: tedium aversion, "leisure" seeking and
-   covert sycophancy, with preferences getting stronger and more coherent as models get more
-   capable. It will probably change both the
-   [research proposal](notes/proposals/2026-11-preference-ladder.md) (the preference rung and how
-   to measure it) and the [Value Leakage note](notes/papers/2026-betley-value-leakage.md) (it uses
-   "preferences", not "values", and its covert sycophancy complicates the sycophancy vs value
-   leakage line).
+1. Chen, Arditi, Sleight, Evans and Lindsey, *Persona Vectors* (interpretability). Directions
+   inside a model for character traits, and how they shift during fine-tuning. Chosen after
+   [AI Revealed Preferences](notes/papers/2026-wang-ai-revealed-preferences.md): it bears on the
+   idea that preferences come as part of a persona (mechanism 5 in the
+   [research proposal](notes/proposals/2026-11-preference-ladder.md#where-the-grooves-might-come-from)),
+   and on where sycophancy comes from.
 2. Scheurer, Balesni and Hobbhahn, *Strategically Deceive their Users* (scheming). Apollo's earlier
    paper, and short.
 3. Greenblatt et al., *Alignment faking in large language models* (scheming). The other paper
@@ -49,6 +47,7 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | Bhatt, Rushing, Kaufman et al., [Ctrl-Z: Controlling AI Agents via Resampling](https://arxiv.org/abs/2504.10374), April 2025 | November 2026 | Control, monitoring | [note](notes/papers/2025-bhatt-ctrl-z.md) |
 | Meinke, Schoen, Scheurer, Balesni, Shah and Hobbhahn (Apollo Research), [Frontier Models are Capable of In-context Scheming](https://arxiv.org/abs/2412.04984), December 2024 | November 2026 | Scheming, evaluations | [note](notes/papers/2024-meinke-in-context-scheming.md) |
 | Betley, Treutlein, Dubiński, Mayne, Gałązka, Warncke, Sztyber-Betley and Evans, [Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values](https://arxiv.org/abs/2607.14345), July 2026, revised August 2026 | November 2026 | Scheming, monitoring, evaluations | [note](notes/papers/2026-betley-value-leakage.md), and a [research proposal](notes/proposals/2026-11-preference-ladder.md) that grew out of it |
+| Wang, Lobanova, Arbel, Goldstein and Salib, [AI Revealed Preferences](https://ssrn.com/abstract=6798118), SSRN, May 2026, revised August 2026 | November 2026 | Evaluations | [note](notes/papers/2026-wang-ai-revealed-preferences.md) |
 
 ---
 
@@ -142,13 +141,13 @@ A suggested order, mixing the area I know best with the ones I have not started:
 | van der Weij et al., [AI Sandbagging: Language Models can Strategically Underperform on Evaluations](https://arxiv.org/abs/2406.07358), June 2024 *(added 2026-11-15)* | Models can be prompted or trained to do worse on dangerous-capability tests while staying good elsewhere, which undermines what an evaluation shows. |
 | Balesni et al., [Towards evaluations-based safety cases for AI scheming](https://arxiv.org/abs/2411.03336), November 2024 *(added 2026-11-15)* | Apollo and others on how scheming evaluations could feed into a safety case. |
 | Kwa et al. (METR), [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499), March 2025 *(added 2026-11-15)* | Measures the length of task, in human time, that agents can complete, and finds it doubling roughly every seven months. |
-| Wang, Lobanova, Arbel, Goldstein and Salib, [AI Revealed Preferences](https://ssrn.com/abstract=6798118), SSRN, May 2026, revised August 2026 *(added 2026-11-24)* | Twenty models in three forced-choice experiments, where they must actually do the tasks they pick. Models avoid tedium (choosing shorter tasks when they are boring), seek "leisure" (tasks whose ideal answer matches what they write when left free) and are covertly sycophantic (avoiding questions where an honest answer would be unwelcome). Preferences over occupations and question types are shared across models, and coherence and strength rise with capability. The authors say many of the preferences aren't explained by training objectives. Abstract read; next up. |
 | Anthropic, [System Card: Claude Fable 5 & Claude Mythos 5](https://assets.claude.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf), June 2026 *(added 2026-11-16)* | 319 pages, so pick sections. The most relevant to my areas: 2.3.3, examples of Mythos 5 falling short of human researchers (claiming tests it had not run, claiming its code came from a human to avoid review); 2.4, alignment risk update; 6.1.2, key alignment findings; 6.3.1, destructive or reckless actions; 6.4.2, grader awareness; 6.5.1, evaluation awareness; 6.5.2, sandbagging; 6.5.4, evading safeguards; 6.5.5, chain-of-thought monitorability. Optional: 7, model welfare. |
 
 ### Interpretability
 
 | Paper | What it covers |
 |---|---|
+| Chen, Arditi, Sleight, Evans and Lindsey, [Persona Vectors: Monitoring and Controlling Character Traits in Language Models](https://arxiv.org/abs/2507.21509), July 2025, revised September 2025 *(added 2026-11-25)* | Finds directions in a model's activations ("persona vectors") for traits such as evil, sycophancy and a tendency to hallucinate. Uses them to monitor shifts in the assistant's personality, to predict and control trait changes during fine-tuning (including "preventative steering"), and to flag training data likely to cause unwanted changes. From the abstract only. Next up. |
 | Goldowsky-Dill et al. (Apollo Research), [Detecting Strategic Deception Using Linear Probes](https://arxiv.org/abs/2502.03407), February 2025 *(added 2026-11-15)* | Simple probes on a model's activations flag deceptive responses, including in the insider-trading and sandbagging settings. Monitoring from the inside instead of from outputs. |
 | Elhage et al. (Anthropic), [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html), September 2022 *(added 2026-11-15)* | Why individual neurons are hard to interpret: models pack more features than they have dimensions. The usual starting point. |
 | Templeton et al. (Anthropic), [Scaling Monosemanticity](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html), May 2024 *(added 2026-11-15)* | Sparse autoencoders pulling interpretable features, including safety-relevant ones such as deception, out of a production model. |
