@@ -74,6 +74,7 @@ Nothing at the moment.
 | [If anyone builds it, everyone dies.](https://www.youtube.com/watch?v=4KCpGLaA4DY), October 2026 | Hoog | On the Yudkowsky and Soares book of the same name, which I have [read](#books). | [Summary](notes/videos/2026-hoog-if-anyone-builds-it.md) |
 | [Mark Zuckerberg Doesn't Understand Superintelligence](https://www.youtube.com/watch?v=wKfnL_wHafs), November 2026 | Hoog | | [Summary](notes/videos/2026-hoog-zuckerberg-superintelligence.md) |
 | [This might be the worst AI warning we get.](https://www.youtube.com/watch?v=xFYUo0ZmK-A), October 2026 | AI In Context (80,000 Hours) | A good breakdown of the Hugging Face incident. | [Summary](notes/videos/2026-ai-in-context-worst-ai-warning.md) |
+| [One of AI's most careful thinkers finally sounds the alarm \| Paul Christiano (The Hinton Lectures)](https://www.youtube.com/watch?v=aRvrREUmm5g), November 2026 | 80,000 Hours | His three Hinton Lectures: why AI might try to take over, why it could soon be capable enough to succeed, and the governance to prevent it. Watched over a lunch break and after work. What he points to is under [Paul Christiano](#paul-christiano-the-hinton-lectures) below. | [Summary](notes/videos/2026-christiano-hinton-lectures.md) |
 
 ### Podcasts
 
@@ -219,6 +220,26 @@ His books and papers, starting with the ones he mentions in the
 | Kokotajlo, Alexander et al., [AI 2027](https://ai-2027.com/), 2025 | A detailed scenario of how the next few years of AI could go. |
 | de Garis, The Artilect War, 2005 (book) | Yampolskiy says he always recommends it. On a coming conflict over whether to build superhuman AI. |
 | Bostrom, [AI Creation and the Cosmic Host](https://nickbostrom.com/papers/ai-creation-and-the-cosmic-host.pdf), 2024 | Whether a superintelligence should defer to the norms of other powerful minds that may already exist. |
+
+#### Paul Christiano, The Hinton Lectures
+
+What he points to in the [Hinton Lectures](notes/videos/2026-christiano-hinton-lectures.md),
+leaving out what is already on this list (*Chain of Thought Monitorability*, METR's time horizons)
+or in the [Hugging Face incident note](notes/incidents/2026-07-hugging-face-incident.md#sources-and-further-reading)
+(ExploitGym, OpenAI's postmortem). All *(added 2026-11-25)*.
+
+| Item | What it covers |
+|---|---|
+| [Paul Christiano: We could be 12 months away from AIs that can overthrow the government](https://www.dwarkesh.com/p/paul-christiano-2), Dwarkesh Podcast, November 2026 | Where he defends the views in the lectures. Recommended by Rob Wiblin in the introduction. |
+| METR, [Recent Frontier Models Are Reward Hacking](https://metr.org/blog/2025-06-05-recent-reward-hacking), June 2025 | Where his o3 examples come from, including overwriting the grader's timer. Reward hacking as a general pattern, not one model's quirk. |
+| Anthropic, [When AI builds itself](https://www.anthropic.com/institute/recursive-self-improvement), June 2026 | The essay he shows on Anthropic's progress towards recursive self-improvement. Background for the [METR RSI podcast](notes/podcasts/2026-80k-metr-rsi.md). From search results only. |
+| Mazeika, Hendrycks et al. (Center for AI Safety and Scale AI), [Remote Labor Index: Measuring AI Automation of Remote Work](https://arxiv.org/abs/2510.26787), October 2025 | 240 real freelance projects. The best agent managed 2.5% at launch. He says it is now about 40%, which is worth checking against the leaderboard. |
+| Epoch AI, [Do the Returns to Software R&D Point Towards a Singularity?](https://epoch.ai/blog/do-the-returns-to-software-rnd-point-towards-a-singularity) | Whether AI research can speed itself up or runs into diminishing returns. He shows an Epoch chart on this, but I have not confirmed it is from this piece. |
+| Adamala et al., [Confronting risks of mirror life](https://doi.org/10.1126/science.ads9158), Science, December 2024 | His example of a weapon worse than natural pandemics: mirror bacteria could evade immune systems. There is also a long technical report. |
+| OpenAI, [Model Spec](https://model-spec.openai.com/), and Anthropic, [Claude's constitution](https://www.anthropic.com/constitution) | His "specification" area: what a model is meant to do. The constitution also comes up in the [research proposal](notes/proposals/2026-11-preference-ladder.md). |
+| Pacing the Frontier, July 2026. Start from [Zvi's write-up](https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to); the letter itself is still to find | A letter from lab employees asking the US government to back an international effort to build the tools to deliberately pace frontier AI development. It asks for the option to slow later, not a pause now. He says 1,400 signatures; coverage at the time said 1,100 to 1,300. |
+| European Commission, [General-Purpose AI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) | The EU AI Act's compliance route, which he says goes further than US state laws: required evaluations, minimum safety and security standards, risk assessments. |
+| [Alignment Research Center](https://www.alignment.org/) | His organisation: algorithms that explain a model's behaviour from its structure, "like interpretability, but without the part where humans actually understand". He also names LawZero (Yoshua Bengio) and Resolution as other new bets. |
 
 ### Governance and safety frameworks
 
